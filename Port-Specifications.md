@@ -51,7 +51,7 @@ endmodule: Top
 ```
 Now, I admit, this looks really confusing at first. But essentially, all you have to do is state which port you want to map a signal to by prepending a '.' to the port name. In this example, we want to map the signal `foo` to `m1`'s `in2` port. So, we prepend `in2` with a '.', and wrap `foo` in parenthesis next to it. Using this, we don't have to worry about which order we declare our arguments! 
 
-Also, notice that we can use the same variable name in our `Top` module as the variable names in our `myModule` declaration! If you so happen to have this, then you can use the `.*` shorthand to *automatically map signals to a port with the same name.* It'll look something like this:
+Also, notice that we can use the same variable name in our `Top` module as the variable names in our `myModule` declaration! If you so happen to have this, then you can use the `.*` shorthand to *automatically map signals to any and every port with the same name.* It'll look something like this:
 
 ```sv
 // Named Port Specification with '.*'
