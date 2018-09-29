@@ -43,7 +43,7 @@ module Top
 	(output out,
 	input logic in1, foo, bar);
 	
-	myModule m1(.in2(foo), .out(out), .in1(in1), ,in3(bar));
+	myModule m1(.in2(foo), .out(out), .in1(in1), .in3(bar));
 	
 endmodule: Top
 ```
