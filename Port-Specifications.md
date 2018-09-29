@@ -10,6 +10,7 @@ module myModule
 	input logic in1, in2, in3);
 	
 	// we dont care about what this actually does
+	
 endmodule: myModule
 ```
 How would you implement it in the top .sv file? Most of you use something called *ordered port specification*, but there are other ways! Which one should you use? Well, it comes down to preference, but please be consistent and use only one specification style throughout a project.
