@@ -68,4 +68,4 @@ endmodule: Top
 You see how we don't have to even declare what we're mapping `m1`s `in1` and `out` port to? The `.*` will automatically map `in1` and `out` to the Top module's `in1` and `out`, since they share the same name! 
 
 ## Conclusion
-Which specification you use is up to you, but it's good to know that other ways to specify ports exist, and how to do it. That way, if you come across code written differently, you'll be able to understand it. Just remember that the second most important thing when writing code is that it's *concise and easy to read*. (and the most important thing is to write code that actually works)
+Which specification you use is up to you, but it's good to know that other ways to specify ports exist, and how to do it. That way, if you come across code written differently, you'll be able to understand it. Just remember that the second most important thing when writing code is that it's *concise and easy to read* (and the most important thing is to write code that actually works).
