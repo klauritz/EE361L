@@ -24,7 +24,11 @@ RB6 = 0 // dont care
 RB7 = 0 // dont care
 
 ```
-Thus, to make RB0 and RB1 outputs, while setting RB2 to an input, we have to set TRISB a binary value of `00000100`. However, TRISB accepts hex values, so we have to convert that binary value into a hexadecimal value. You could do this by hand, but if you're lazy like me, you can use <a href="https://www.rapidtables.com/convert/number/binary-to-hex.html">this online hex converter.</a>
+Thus, to make RB0 and RB1 outputs, while setting RB2 to an input, we have to set TRISB a binary value of `00000100`. You can assign TRISB this value by prepending with `0b`, so the compiler knows that the numbers represent a binary number. The code would then look like:
+```
+TRISB = 0b00000100;
+```
+You could also declare it as a hex value. To convert, you can use <a href="https://www.rapidtables.com/convert/number/binary-to-hex.html">this online hex converter.</a>
 
 Using that, we get `00000100 => 4`, and we prefix the hex value with `0x` to denote that it's a hex value. Therefore, our final line of code in our program will be:
 
